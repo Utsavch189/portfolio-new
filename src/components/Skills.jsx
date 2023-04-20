@@ -6,6 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
+import CircularProgress from "./CircularProgress";
 
 export const Skills = () => {
   const responsive = {
@@ -28,6 +29,37 @@ export const Skills = () => {
     }
   };
 
+  const skills=[
+    {
+      name:"Django",
+      percentage:75
+    },
+    {
+      name:"React JS",
+      percentage:70
+    },
+    {
+      name:"MySQL",
+      percentage:70
+    },
+    {
+      name:"Git",
+      percentage:65
+    },
+    {
+      name:"React Native Expo",
+      percentage:50
+    },
+    {
+      name:"MongoDB",
+      percentage:75
+    },
+    {
+      name:"GraphQL",
+      percentage:55
+    }
+  ]
+
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -37,22 +69,14 @@ export const Skills = () => {
                         <h2>About Skills</h2>
                         <p>I have learned different programming languages ​​so far and as far as my skills are concerned<br></br></p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Django</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>React JS</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>MySQL</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Git</h5>
-                            </div>
+                            {
+                              skills.map((i,k)=>
+                                <div className="item" key={k}>
+                                  <CircularProgress percentage={i.percentage}/>
+                                  <h5>{i.name}</h5>
+                                </div>
+                              )
+                            }
                         </Carousel>
                     </div>
                 </div>
