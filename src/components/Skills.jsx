@@ -57,7 +57,11 @@ export const Skills = () => {
     {
       name:"GraphQL",
       percentage:55
-    }
+    },
+    {
+      name:"Solidity SmartContract",
+      percentage:77
+    },
   ]
 
   return (
