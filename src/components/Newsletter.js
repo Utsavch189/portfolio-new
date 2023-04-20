@@ -24,14 +24,8 @@ export const Newsletter = ({ status, message, onValidated }) => {
   return (
       <Col lg={12}>
         <div className="newsletter-bx wow slideInUp">
-          <Row>
-            <Col lg={12} md={6} xl={5}>
-              
-            </Col>
-            <Col md={6} xl={7}>
-              
-            </Col>
-          </Row>
+          <iframe width="420" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Guptipara,%20Hooghly,%20West%20Bengal%20Guptipara+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          
         </div>
       </Col>
   )

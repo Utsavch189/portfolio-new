@@ -9,6 +9,7 @@ import projImg6 from "../assets/img/12345.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import BrowserTitleName from "./BrowserTitleName";
 
 export const Projects = () => {
 
@@ -38,6 +39,7 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
+      <BrowserTitleName title="Projects"/>
       <Container>
         <Row>
           <Col size={12}>
