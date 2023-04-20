@@ -1,10 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/forth project.jpg";
-import projImg2 from "../assets/img/second work.jpg";
-import projImg3 from "../assets/img/project1.jpg";
-import projImg4 from "../assets/img/first work.jpg";
-import projImg5 from "../assets/img/fifth work.jpg";
+import projImg4 from "../assets/img/forth work.png";
+import projImg2 from "../assets/img/second work.png";
+import projImg3 from "../assets/img/third work.png";
+import projImg1 from "../assets/img/first work.png";
+import projImg5 from "../assets/img/fifth work.png";
 import projImg6 from "../assets/img/12345.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -15,33 +15,29 @@ export const Projects = () => {
   const projects = [
     {
       
-      description: "Design & Development",
+      description: "Shell for remote computer access , made by Python and MongoDB",
       imgUrl: projImg1,
     },
     {
-      description: "Design & Development",
+      description: "TaxSuvidhaa, a frelance project , made by reactJS and Django Rest Api and MySQL",
       imgUrl: projImg2,
     },
     {
-      description: "Design & Development",
+      description: "Complete exam system for my college , made by Django and sqlLite3",
       imgUrl: projImg3,
     },
     {
-      description: "Design & Development",
+      description: "NetFlix Clone using TMDB API and reactJS",
       imgUrl: projImg4,
     },
     {
-      description: "Design & Development",
+      description: "API testing console ",
       imgUrl: projImg5,
-    },
-    {
-      description: "Design & Development",
-      imgUrl: projImg6,
     },
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -49,7 +45,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>I show you to all the big and small websites I have done so far</p>
+                <p>I show you to all the big and small works I have done so far</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
