@@ -4,7 +4,6 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import BrowserTitleName from "./BrowserTitleName";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -50,7 +49,6 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <BrowserTitleName title="Home"/>
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>

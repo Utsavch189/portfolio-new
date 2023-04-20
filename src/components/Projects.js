@@ -9,7 +9,6 @@ import projImg6 from "../assets/img/12345.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import BrowserTitleName from "./BrowserTitleName";
 
 export const Projects = () => {
 
@@ -39,7 +38,6 @@ export const Projects = () => {
 
   return (
     <section className="project" id="projects">
-      <BrowserTitleName title="Projects"/>
       <Container>
         <Row>
           <Col size={12}>
@@ -49,17 +47,7 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>I show you to all the big and small works I have done so far</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    {/* <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item> */}
-                  </Nav>
+
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>

@@ -8,7 +8,6 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-import BrowserTitleName from "./BrowserTitleName";
 
 export const NavBar = () => {
 
@@ -35,7 +34,6 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <BrowserTitleName title={activeLink}/>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
