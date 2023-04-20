@@ -14,24 +14,28 @@ export const Projects = () => {
 
   const projects = [
     {
-      
+      title:"Shell & Spy",
       description: "Shell for remote computer access , made by Python and MongoDB",
       imgUrl: projImg1,
     },
     {
-      description: "TaxSuvidhaa, a frelance project , made by reactJS and Django Rest Api and MySQL",
+      title:"TaxSuvidha",
+      description: "A frelance project , made by reactJS and Django Rest Api and MySQL and Socket Server",
       imgUrl: projImg2,
     },
     {
+      title:"HETC Exam System",
       description: "Complete exam system for my college , made by Django and sqlLite3",
       imgUrl: projImg3,
     },
     {
+      title:"Netflix Clone",
       description: "NetFlix Clone using TMDB API and reactJS",
       imgUrl: projImg4,
     },
     {
-      description: "API testing console ",
+      title:"API testing console",
+      description: "Test your REST API's",
       imgUrl: projImg5,
     },
   ];
